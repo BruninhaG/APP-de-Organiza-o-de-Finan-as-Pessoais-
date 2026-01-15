@@ -1,0 +1,1 @@
+Reflexão sobre o uso de Vibe Coding e IA no projeto.

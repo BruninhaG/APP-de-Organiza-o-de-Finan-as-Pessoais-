@@ -1,0 +1,1 @@
+PRD simplificado focado em organização financeira com IA.

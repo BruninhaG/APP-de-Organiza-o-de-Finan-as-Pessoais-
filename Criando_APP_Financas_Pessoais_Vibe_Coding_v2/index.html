@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>FinanTask • Organização Financeira</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background-color: #f1f3f4;
+      color: #333;
+    }
+    header {
+      background: #1a73e8;
+      color: #fff;
+      padding: 16px 24px;
+      font-size: 20px;
+      font-weight: 600;
+    }
+    .container {
+      display: flex;
+      height: calc(100vh - 64px);
+    }
+    aside {
+      width: 260px;
+      background: #ffffff;
+      border-right: 1px solid #ddd;
+      padding: 16px;
+    }
+    aside h3 {
+      margin-top: 0;
+      font-size: 16px;
+      color: #1a73e8;
+    }
+    aside ul {
+      list-style: none;
+      padding: 0;
+    }
+    aside li {
+      padding: 10px;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-bottom: 6px;
+      font-size: 14px;
+    }
+    aside li:hover {
+      background: #e8f0fe;
+    }
+    main {
+      flex: 1;
+      padding: 20px;
+      overflow-x: auto;
+    }
+    .board {
+      display: flex;
+      gap: 20px;
+    }
+    .column {
+      background: #ffffff;
+      border-radius: 12px;
+      width: 320px;
+      padding: 15px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    .column h4 {
+      margin-top: 0;
+      color: #1a73e8;
+      font-size: 16px;
+    }
+    .card {
+      background: #f8f9fa;
+      border-radius: 10px;
+      padding: 12px;
+      margin-bottom: 12px;
+      font-size: 14px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    }
+    .card strong {
+      display: block;
+      margin-bottom: 4px;
+    }
+    .card span {
+      font-size: 12px;
+      color: #555;
+    }
+    .tag {
+      display: inline-block;
+      margin-top: 6px;
+      padding: 4px 10px;
+      border-radius: 14px;
+      font-size: 11px;
+      background: #e0e7ff;
+      color: #1e40af;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  💰 FinanTask — Organização Financeira Inteligente
+</header>
+
+<div class="container">
+  <aside>
+    <h3>📅 Agenda Financeira</h3>
+    <ul>
+      <li>📌 Hoje</li>
+      <li>🗓️ Esta Semana</li>
+      <li>📆 Este Mês</li>
+      <li>🎯 Metas de Economia</li>
+      <li>🤖 Assistente IA</li>
+    </ul>
+
+    <h3>📊 Visão Rápida</h3>
+    <ul>
+      <li>Saldo Atual: R$ 2.350</li>
+      <li>Despesas do Mês: R$ 1.420</li>
+      <li>Economia Planejada: R$ 500</li>
+    </ul>
+  </aside>
+
+  <main>
+    <div class="board">
+
+      <div class="column">
+        <h4>💸 A Pagar</h4>
+        <div class="card">
+          <strong>Fatura do Cartão</strong>
+          <span>Vencimento: 10/02 • R$ 850</span>
+          <div class="tag">Despesa Fixa</div>
+        </div>
+        <div class="card">
+          <strong>Aluguel</strong>
+          <span>Vencimento: 05/02 • R$ 1.200</span>
+          <div class="tag">Alta Prioridade</div>
+        </div>
+      </div>
+
+      <div class="column">
+        <h4>⏳ Planejado</h4>
+        <div class="card">
+          <strong>Reserva de Emergência</strong>
+          <span>Meta mensal: R$ 300</span>
+          <div class="tag">Economia</div>
+        </div>
+        <div class="card">
+          <strong>Viagem</strong>
+          <span>Meta: Dezembro • R$ 2.000</span>
+          <div class="tag">Objetivo</div>
+        </div>
+      </div>
+
+      <div class="column">
+        <h4>✅ Concluído</h4>
+        <div class="card">
+          <strong>Conta de Luz</strong>
+          <span>Paga em 02/02 • R$ 180</span>
+          <div class="tag">Concluído</div>
+        </div>
+        <div class="card">
+          <strong>Internet</strong>
+          <span>Paga em 01/02 • R$ 120</span>
+          <div class="tag">Concluído</div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+</div>
+
+</body>
+</html>
